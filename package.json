@@ -1,0 +1,27 @@
+{
+  "name": "Breaking_Bricks",
+  "version": "1.0.0",
+  "description": "### Background",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hbkwong/breaking_bricks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hbkwong/breaking_bricks/issues"
+  },
+  "homepage": "https://github.com/hbkwong/breaking_bricks#readme",
+  "dependencies": {
+    "webpack": "^2.3.2"
+  }
+}
