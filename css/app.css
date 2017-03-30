@@ -12,6 +12,7 @@ body {
 }
 
 canvas {
-  border: 4px solid black;
+  border: 4px solid #132212;
+  border-radius: 7px;
   padding-right: 16px;
 }
