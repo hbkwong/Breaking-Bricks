@@ -1,0 +1,17 @@
+body {
+  background: url("../img/background.png") no-repeat center center fixed;
+  background-color: black;
+  background-size: 100%;
+}
+
+.canvas-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+canvas {
+  border: 4px solid black;
+  padding-right: 16px;
+}
