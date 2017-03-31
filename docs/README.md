@@ -12,8 +12,8 @@ Players of Breaking Bricks will be able to do the following:
 
 - [ ] Start and pause the game
 - [ ] Control a laterally-moving paddle to bounce the game ball
-- [ ] Progress through multiple levels of gameplay
-- [ ] Access game instructions on the sidebar
+- [ ] Score, number of lives, and other statistics are rendered on-screen
+- [ ] Access on-page game instructions
 - [ ] View a production README
 
 ### Wireframes
