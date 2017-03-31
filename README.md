@@ -15,7 +15,12 @@ Breaking Bricks utilizes the following:
 
 32 Blue Sky bricks line the playing field, each worth 1 point. When the player reaches 25 points, the player wins the game.
 
-Primary features of the game include:
+Current features of the game include:
+
+- [X] A laterally-moving paddle keeps the game ball in play
+- [X] Statistics (lives, score, etc.) are tracked and updated live on-screen
+- [X] The game ball collides and bounces off other game objects
+- [X] On-page instructions are viewable to guide the player
 
 ### Mouse-Based Controls
 
