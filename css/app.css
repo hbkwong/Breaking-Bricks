@@ -1,5 +1,5 @@
 body {
-  background: url("../img/background.png") no-repeat center center fixed;
+  background: url("../img/background.jpg") no-repeat center center fixed;
   background-color: black;
   background-size: 100%;
 }
@@ -12,7 +12,20 @@ body {
 }
 
 canvas {
-  border: 4px solid #132212;
+  border: 4px solid gray;
   border-radius: 7px;
   padding-right: 16px;
+}
+
+.instructions {
+  font-size: 22px;
+  font-family: Courier;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.blue-sky {
+  color: #B1F3F1;
 }
