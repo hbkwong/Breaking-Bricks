@@ -29,3 +29,11 @@ canvas {
 .blue-sky {
   color: #B1F3F1;
 }
+
+.entire-game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
