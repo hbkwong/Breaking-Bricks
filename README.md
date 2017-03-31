@@ -19,14 +19,45 @@ Primary features of the game include:
 
 ### Mouse-Based Controls
 
+The player controls all movement of the paddle via mouse controls. Upon triggering a mouse event, the clientX property (read-only), will return the horizontal coordinate of the pointer.
+
+After subtracting any offset pixels, if the resulting value is positive and within the horizontal plane, the paddle's position will be adjusted.
+
+```javascript
+handleMouseMove (e) {
+  let distance = e.clientX - this.canvas.offsetLeft;
+
+  if (0 < distance && this.canvas.width > distance) {
+    this.paddle.x = distance - (0.5 * this.paddle.width);
+  }
+}
+```
+
 ### Collision Detection
 
-- Paddle
-- Walls
-- Brick
+During gameplay, the ball collides with several other objects of the game:
 
-### Game Resetting
+- Paddle
+- Brick
+- Wall
+
+With wall collisions, the angle of incidence (the collision) will equal the angle of reflection (the bounce).
+
+For instance, we can look at the vertical component of the ball's trajectory. If the size of the ball is greater than its total change in vertical position, the ball reflects off the wall with an equal but opposite change in position.
+
+```javascript
+handleWallCollision () {
+  let totalX = this.x + this.dx;
+  let totalY = this.y + this.dy;
+
+  if (totalX < this.radius || totalX > this.canvas.width - this.radius) {
+    this.dx *= -1;
+  } else if (totalY < this.radius) {
+    this.dy *= -1;
+  }
+}
+```
 
 ### Future Release
 * [ ] Pause and Resume
-* [ ] Images for drawn elements (e.g. bricks)
+* [ ] Keyboard Controls
