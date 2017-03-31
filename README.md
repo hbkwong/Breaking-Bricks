@@ -1,6 +1,6 @@
 # Breaking Bricks
 
-![screenshot](docs/screenshot.png)
+![screenshot](img/screenshot.png)
 
 Breaking Bricks is a pong-style game inspired by the arcade classic, Breakout.
 
