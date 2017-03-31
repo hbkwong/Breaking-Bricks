@@ -6,7 +6,7 @@ Breaking Bricks is a pong-style game inspired by the arcade classic, Breakout.
 
 > Breaking Bricks is currently under development. If you have any recommendations or comments to share, please feel free to connect.
 
-Breaking Bricks utilizes the following:
+The game utilizes the following:
 
 - JavaScript
 - HTML5 Canvas
@@ -59,6 +59,41 @@ handleWallCollision () {
     this.dx *= -1;
   } else if (totalY < this.radius) {
     this.dy *= -1;
+  }
+}
+```
+
+### Handling Broken Bricks
+
+The game class manages much of the outcome when the ball collides with a brick. In checking for collisions, the game iterates through the bricks and checks for any currently unbroken. With the helper method #breakBrick, if a brick collision has indeed occurred:
+
+1. The state of the brick is updated
+2. The score increases by one
+3. The ball continues its movement, albeit with an opposite vertical component
+
+Once the score reaches a certain amount, the game is over.
+
+```javascript
+detectCollisions () {
+  for (let idx = 0; idx < this.bricks.length; idx++) {
+    for (let idx2 = 0; idx2 < this.bricks[idx].length; idx2++) {
+      let brick = this.bricks[idx][idx2];
+      if (brick.state === "unbroken") {
+        this.breakBrick(brick);
+      }
+    }
+  }
+}
+
+breakBrick (brick) {
+  if (this.ball.checkBrickCollision(brick)) {
+    brick.state = "broken";
+    this.bricksHit += 1;
+    this.ball.dy *= -1;
+    if (this.bricksHit === 25) {
+      this.result = "W";
+      this.gameEnded = true;
+    }
   }
 }
 ```
