@@ -2,7 +2,9 @@
 
 ![screenshot](img/screenshot.png)
 
-Breaking Bricks is a pong-style game inspired by the arcade classic, Breakout.
+Breaking Bricks is a pong-style game inspired by the arcade classic, Breakout. The game begins with several layers of bricks placed in the top portion of the screen. A ball travels across the screen, bouncing off these bricks as well as the top and side walls of the playing field.
+
+As a brick is hit, the ball bounces away and the brick is destroyed. If the ball reaches the bottom of the screen, the player loses a turn. To prevent this, the player controls a moving paddle to bounce the ball, keeping it in play.
 
 > Breaking Bricks is currently under development. If you have any recommendations or comments to share, please feel free to connect.
 
