@@ -20,7 +20,7 @@ Players of Breaking Bricks will be able to do the following:
 
 Breaking Bricks will be featured on a single page. The main portion of the screen will represent the playing field, with gameplay instructions and controls illustrated to its immediate left.
 
-![wireframe](docs/wireframe.png)
+![wireframe](wireframe.png)
 
 ### Technologies
 
