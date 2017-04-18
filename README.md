@@ -2,7 +2,7 @@
 
 ![screenshot](img/screenshot.png)
 
-[Live link](https://hbkwong.github.io/breaking_bricks/)
+[Live link](https://hbkwong.github.io/Breaking-Bricks/)
 
 Breaking Bricks is a pong-style game inspired by the arcade classic, Breakout. The game begins with several layers of bricks placed in the top portion of the screen. A ball travels across the screen, bouncing off these bricks as well as the top and side walls of the playing field.
 
