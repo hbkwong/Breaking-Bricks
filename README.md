@@ -1,6 +1,6 @@
 # Breaking Bricks
 
-![screenshot](img/screen.png)
+![screenshot](img/bbexample.gif)
 
 [Live link](https://hbkwong.github.io/Breaking-Bricks/)
 
