@@ -8,8 +8,6 @@ Breaking Bricks is a pong-style game inspired by the arcade classic, Breakout. T
 
 As a brick is hit, the ball bounces away and the brick is destroyed. If the ball reaches the bottom of the screen, the player loses a turn. To prevent this, the player controls a moving paddle to bounce the ball, keeping it in play.
 
-> Breaking Bricks is currently under development. If you have any recommendations or comments to share, please feel free to connect.
-
 The game utilizes the following:
 
 - JavaScript
@@ -50,7 +48,7 @@ During gameplay, the ball collides with several other objects of the game:
 - Brick
 - Wall
 
-With wall collisions, the angle of incidence (the collision) will equal the angle of reflection (the bounce).
+With wall collisions, the angle of incidence (i.e., the collision) will equal the angle of reflection (i.e., the bounce).
 
 For instance, we can look at the vertical component of the ball's trajectory. If the size of the ball is greater than its total change in vertical position, the ball reflects off the wall with an equal but opposite change in position.
 
@@ -94,8 +92,8 @@ breakBrick (brick) {
     brick.state = "broken";
     this.bricksHit += 1;
     this.ball.dy *= -1;
-    if (this.bricksHit === 25) {
-      this.result = "W";
+    if (this.bricksHit === 40) {
+      this.result = "YOU WIN!";
       this.gameEnded = true;
     }
   }
